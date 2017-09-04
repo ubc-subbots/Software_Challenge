@@ -28,14 +28,14 @@ if you're on campus use the `ubcsecure` or `resnet` networks for best results.
     you will use this account to set up CLion later on_
 4. Boot into Ubuntu for the remaining steps
 5. Install git by running `sudo apt-get install git`
-6. Clone this repository by running `git clone --recursive https://github.com/UBC-Snowbots/IGVC-2017.git ~/IGVC-2017`
-7. To start set-up run `cd ~/IGVC-2017 && ./get_started.sh` **(Do not run this script as root)**
+6. Clone this repository by running `git clone https://github.com/UBC-Snowbots/Software_Challenge.git ~/Software_Challenge`
+7. To start set-up run `cd ~/Software_Challenge && ./get_started.sh` **(Do not run this script as root)**
     - _Just choose yes and enter your password when the terminal prompts you_ 
-8. Build the ROS project by running `source /opt/ros/kinetic/setup.bash` and `cd ~/IGVC-2017 && catkin_make` 
+8. Build the ROS project by running `source /opt/ros/kinetic/setup.bash` and `cd ~/Software_Challenge && catkin_make` 
     - If everything compiles correctly and you don't get any errors, then you're good to go!
 
 ### Important Notes:
-- To run CLion with ROS, you must first go in to terminal, navigate to your project (`cd ~/IGVC-2017`), run `source devel/setup.sh` and then **from the same terminal** run `clion`
+- To run CLion with ROS, you must first go in to terminal, navigate to your project (`cd ~/Software_Challenge`), run `source devel/setup.sh` and then **from the same terminal** run `clion`
 - CLion will not support auto-completion in your *.cpp* and *.h* files until you've added them to the CMake file
 
 ### Coding Conventions
