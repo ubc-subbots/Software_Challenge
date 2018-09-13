@@ -23,10 +23,6 @@ CURR_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Install all required dependencies to build this repo
 rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 
-# We have this extra rosdep call because rosdep can't seem to find nested
-# `package.xml` files, like those in src/gps_umd/gps_common
-rosdep install --from-paths --rosdistro melodic -y
-
 echo "================================================================"
 echo "Finished installing other ROS dependencies."
 echo "================================================================"
