@@ -25,7 +25,7 @@ SHELL_CONFIG_FILES=(
 # listed above, if they are not present already
 declare -a new_shell_config_lines=(
     # Source the ROS Environment Variables Automatically
-    "source /opt/ros/melodic/setup.sh"\
+    "source /opt/ros/kinetic/setup.sh"\
     # Make sure that all shells know where to find our custom gazebo models,
     # plugins, and resources. Make sure to preserve the path that already exists as well
     "export GAZEBO_MODEL_PATH=$DIR/src/sb_gazebo/models:${GAZEBO_MODEL_PATH}"\
@@ -64,13 +64,13 @@ sudo adduser $USER dialout
 ###############
 
 echo "================================================================" 
-echo "Installing ROS Melodic"
+echo "Installing ROS Kinetic"
 echo "================================================================"
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 sudo apt-get update -y
-sudo apt-get install ros-melodic-desktop-full -y
+sudo apt-get install ros-kinetic-desktop-full -y
 
 # Initialize rosdep
 sudo rosdep init
@@ -83,7 +83,7 @@ rosdep update
 echo "================================================================"
 echo "Installing CLion"
 echo "================================================================"
-sudo snap install clion
+sudo snap install clion --classic
 
 ##############################
 # Install Other Dependencies #
