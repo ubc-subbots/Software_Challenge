@@ -34,7 +34,7 @@ if you're on campus use the `ubcsecure` or `resnet` networks for best results.
 8. Build the ROS project by running `source /opt/ros/kinetic/setup.bash` and `cd ~/Software_Challenge && catkin_make` 
     - If everything compiles correctly and you don't get any errors, then you're good to go!
     
-##The challenge!
+## The challenge!
 1. The challenge is to get the turtle in the turtlesim simulator to perform a sinusoidal motion in the simulation area.
 2. First you'll need to run the turtilesim, to run the turtlesim, follow the instructions at http://wiki.ros.org/turtlesim.
 3. Use the solution.cpp to implement a solution where the turtlesim performs a sinusoidal wave. Instructions on how to interact with the turtle in the simulator are located at http://wiki.ros.org/turtlesim/Tutorials/Moving%20in%20a%20Straight%20Line. This will tell you how to move in a straight line, but you must edit the code to move in a sinusoidal fashion.
