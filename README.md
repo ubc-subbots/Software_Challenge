@@ -28,7 +28,7 @@ if you're on campus use the `ubcsecure` or `resnet` networks for best results.
     you will use this account to set up CLion later on_
 4. Boot into Ubuntu for the remaining steps
 5. Install git by running `sudo apt-get install git`
-6. Clone this repository by running `git clone https://github.com/UBC-Snowbots/Software_Challenge.git ~/Software_Challenge`
+6. Clone this repository by running `git clone https://github.com/ubc-subbots/Software_Challenge.git ~/Software_Challenge`
 7. To start set-up run `cd ~/Software_Challenge && ./get_started.sh` **(Do not run this script as root)**
     - _Just choose yes and enter your password when the terminal prompts you_ 
 8. Build the ROS project by running `source /opt/ros/kinetic/setup.bash` and `cd ~/Software_Challenge && catkin_make` 
