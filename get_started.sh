@@ -25,7 +25,7 @@ SHELL_CONFIG_FILES=(
 # listed above, if they are not present already
 declare -a new_shell_config_lines=(
     # Source the ROS Environment Variables Automatically
-    "source /opt/ros/melodic/setup.sh"\
+    "source /opt/ros/kinetic/setup.sh"\
     # Make sure that all shells know where to find our custom gazebo models,
     # plugins, and resources. Make sure to preserve the path that already exists as well
     "export GAZEBO_MODEL_PATH=$DIR/src/sb_gazebo/models:${GAZEBO_MODEL_PATH}"\
@@ -70,7 +70,7 @@ echo "================================================================"
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 sudo apt-get update -y
-sudo apt-get install ros-melodic-desktop-full -y
+sudo apt-get install ros-kinetic-desktop-full -y
 
 # Initialize rosdep
 sudo rosdep init
